@@ -7,3 +7,13 @@ export async function login(page:Page) {
     await page.getByRole('button', {name: 'Login'}).click();  
 }
 
+export async function addtocart(page: Page) {
+    await page.getByRole('link', { name: ' Men'}).click();
+    await page.getByRole('link', { name: 'Tshirts'}).click();
+    await page.locator('div:nth-child(8) > .product-image-wrapper > .choose > .nav > li > a').click();
+    await page.getByRole('button', { name: ' Add to cart' }).click();
+    await page.getByRole('link', { name: 'View Cart' }).click();
+};
+
+
+
