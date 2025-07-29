@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://qa.yoursite.com",
+    "username": "qa_user",
+    "password": "qa_pass"
+}
